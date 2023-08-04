@@ -1,6 +1,15 @@
 import React from "react";
 import { Breadcrumb, Layout, Menu, theme } from "antd";
 const { Header, Content, Footer } = Layout;
+import {
+  HomeOutlined,
+  LoadingOutlined,
+  SettingFilled,
+  SmileOutlined,
+  SyncOutlined,
+} from "@ant-design/icons";
+import { Space } from "antd";
+
 const HomePage = () => {
   const {
     token: { colorBgContainer },
@@ -49,6 +58,14 @@ const HomePage = () => {
           }}
         >
           Content
+          <Space>
+            <HomeOutlined />
+            <SettingFilled />
+            <SmileOutlined />
+            <SyncOutlined spin />
+            <SmileOutlined rotate={180} />
+            <LoadingOutlined />
+          </Space>
         </div>
       </Content>
       <Footer
