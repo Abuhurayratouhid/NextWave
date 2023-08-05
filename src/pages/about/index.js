@@ -2,6 +2,7 @@ import { Button } from "antd";
 import React from "react";
 import { Col, Row } from "antd";
 import Link from "next/link";
+import RootLayout from "../../../components/layouts/RootLayout";
 
 const AboutHome = () => {
   return (
@@ -36,3 +37,7 @@ const AboutHome = () => {
 };
 
 export default AboutHome;
+
+AboutHome.getLayout = function getLayout(page) {
+  return <RootLayout>{page}</RootLayout>;
+};
